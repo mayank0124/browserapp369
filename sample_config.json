@@ -1,0 +1,10 @@
+{
+  "injectScript": "console.log('Remote configuration loaded securely.'); window.addEventListener('contextmenu', e => e.preventDefault());",
+  "rules": [
+    { "type": "block", "url": "*://*.facebook.com/*" }
+  ],
+  "featureFlags": {
+    "enableLogging": true
+  },
+  "targetURL": "https://en.wikipedia.org"
+}
