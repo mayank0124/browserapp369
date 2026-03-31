@@ -66,7 +66,13 @@ app.get('/config', async (req, res) => {
 
     } catch (error) {
         console.error('[CONFIG] GitHub fetch error:', error.message);
-        res.status(500).json({ error: 'Failed to fetch configuration' });
+        // Return a safe fallback so the client always gets a valid config
+        return res.json({
+            targetURL: 'https://www.naturalreaders.com/commercial/',
+            injectScript: '',
+            rules: [],
+            featureFlags: { enableLogging: true },
+        });
     }
 });
 
