@@ -14,7 +14,7 @@ app.use(express.json());
 // DEVICE WHITELIST — Add approved device IDs here
 // ─────────────────────────────────────────────────────────────────
 const ALLOWED_DEVICE_IDS = [
-    '3ae4879a-3609-4c24-97ad-1eb004b63bd2', // Dev machine (auto-added)
+    '3ae4879a-3609-4c24-97ad-1eb004b63bd21', // Dev machine (auto-added)
     // Add more device IDs here:
     // 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
 ];
